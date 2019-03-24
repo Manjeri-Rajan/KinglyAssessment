@@ -1,6 +1,6 @@
 # KinglyAssessment
 
-Pinging the url http://localhost:5000/KinglyAssessment_CSV, after running the python code KinglyAssessment.py, will respond in a csv file KinglyAssessment.csv.    
+The url http://localhost:5000/KinglyAssessment_CSV will respond in a csv file KinglyAssessment.csv after running the python code KinglyAssessment.py.
     
 Prerequisites :
 
@@ -25,3 +25,10 @@ Rules :
     House
     Year of Coronatiom
     Ingestion Time - A timestamp of when the data was wrote to the file
+
+Approach :
+
+● Json object from url is extracted using urllib2 module of python
+● The above transformation rules are applied to the elements in the json data
+● The new transformed data is then stored as a csv file
+● Flask is used as the web application interface to provide the csv file as a response
